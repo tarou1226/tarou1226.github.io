@@ -1,0 +1,5 @@
+[build]
+# 描画するhtmlを指定している
+target = "index.html"
+# パブリックURLの設定をしている
+public_url = "/n0ta_pages/"
