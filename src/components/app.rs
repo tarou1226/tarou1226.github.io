@@ -1,4 +1,6 @@
 use yew::prelude::*;
+use super::header::Header;
+use super::footer::Footer;
 pub struct App;
 
 impl Component for App {
@@ -12,9 +14,15 @@ impl Component for App {
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
             <>
-                <div class={"wrapper"}>
-                    <h1>{"Hello, World!"}</h1>
+                <Header />
+                <div class="wrapper">
+                    <h1>{ "Hello, World!" }</h1>
+                    <div class="container">
+                        <p>{ "魔法の言葉でターノシーなっかまーが" }</p>
+                        <strong>{ "ポポポポーン" }</strong>
+                    </div>
                 </div>
+                <Footer />
             </>
         }
     }
