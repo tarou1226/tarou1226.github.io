@@ -13,9 +13,9 @@ impl Component for Footer {
         html! {
             <>
                 <footer>
-                    <div class="container">
+                    <div class="footer-wrapper">
                         <div class="footer-content">
-                            <span>{ "Copyright ©️ 2023 n0ta. All rights reserved." }</span>
+                            <p>{ "Copyright ©️ 2023 n0ta. All rights reserved." }</p>
                         </div>
                     </div>
                 </footer>

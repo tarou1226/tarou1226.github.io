@@ -15,13 +15,15 @@ impl Component for App {
         html! {
             <>
                 <Header />
-                <div class="wrapper">
-                    <h1>{ "Hello, World!" }</h1>
-                    <div class="container">
-                        <p>{ "魔法の言葉でターノシーなっかまーが" }</p>
-                        <strong>{ "ポポポポーン" }</strong>
+                <main>
+                    <div class="home-wrapper">
+                        <h1>{ "Hello, World!" }</h1>
+                        <div class="home-container">
+                            <p>{ "魔法の言葉でターノシーなっかまーが" }</p>
+                            <strong>{ "ポポポポーン" }</strong>
+                        </div>
                     </div>
-                </div>
+                </main>
                 <Footer />
             </>
         }

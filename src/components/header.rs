@@ -15,18 +15,20 @@ impl Component for Header {
         html! {
             <>
                 <header>
-                    <div class="logo">
-                        <img src="logo.png" alt="Logo" />
-                    </div>
+                    <div class="header-wrapper">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="Logo" style="width: 85px; height: auto;" />
+                        </div>
 
-                    <nav>
-                        <ul>
-                            <li><a href={ ROOT_ENTRYPOINT }>{ "Home" }</a></li>
-                            <li><a href={ ROOT_ENTRYPOINT.to_owned() + "/products" }>{ "Products" }</a></li>
-                            <li><a href={ ROOT_ENTRYPOINT.to_owned() + "/services" }>{ "Services" }</a></li>
-                            <li><a href={ ROOT_ENTRYPOINT.to_owned() + "/contact" }>{ "Contact" }</a></li>
-                        </ul>
-                    </nav>
+                        <nav>
+                            <ul>
+                                <li><a href={ ROOT_ENTRYPOINT }>{ "Home" }</a></li>
+                                <li><a href={ ROOT_ENTRYPOINT.to_owned() + "/products" }>{ "Products" }</a></li>
+                                <li><a href={ ROOT_ENTRYPOINT.to_owned() + "/services" }>{ "Services" }</a></li>
+                                <li><a href={ ROOT_ENTRYPOINT.to_owned() + "/contact" }>{ "Contact" }</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </header>
             </>
         }
