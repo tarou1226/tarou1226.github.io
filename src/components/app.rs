@@ -1,6 +1,7 @@
 use yew::prelude::*;
 use super::header::Header;
 use super::footer::Footer;
+use super::top::Top;
 pub struct App;
 
 impl Component for App {
@@ -15,15 +16,7 @@ impl Component for App {
         html! {
             <>
                 <Header />
-                <main>
-                    <div class="home-wrapper">
-                        <h1>{ "Hello, World!" }</h1>
-                        <div class="home-container">
-                            <p>{ "魔法の言葉でターノシーなっかまーが" }</p>
-                            <strong>{ "ポポポポーン" }</strong>
-                        </div>
-                    </div>
-                </main>
+                <Top />
                 <Footer />
             </>
         }
