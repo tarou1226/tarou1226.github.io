@@ -1,7 +1,7 @@
-use yew::prelude::*;
-use super::header::Header;
 use super::footer::Footer;
+use super::header::Header;
 use super::top::Top;
+use yew::prelude::*;
 pub struct App;
 
 impl Component for App {
@@ -11,7 +11,7 @@ impl Component for App {
     fn create(_ctx: &Context<Self>) -> Self {
         Self
     }
-    
+
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
             <>
